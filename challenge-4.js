@@ -1,4 +1,4 @@
- function superCounter(string) {
+ var superCounter = function(string) {
 	var wordCount = string.split(" ").length;
 	var charCount = string.length;
 	var spaceCount = wordCount - 1;
