@@ -3,7 +3,7 @@
 	var charCount = string.length;
 	var spaceCount = wordCount - 1;
 	var avgWordLength = (charCount - spaceCount) / wordCount;
-	console.log('"words": ' + wordCount + ', ' + '"chars": ' + charCount + ', ' + '"avgLength": ' + avgWordLength + ', ' + '"spaces": ' + spaceCount);
-}
+	return ('"words": ' + wordCount + ', ' + '"chars": ' + charCount + ', ' + '"avgLength": ' + avgWordLength + ', ' + '"spaces": ' + spaceCount);
+};
 
-superCounter("Count me in");
+console.log(superCounter("Count me in"));
