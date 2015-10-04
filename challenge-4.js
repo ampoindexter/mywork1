@@ -23,6 +23,6 @@ function superCounter(string) {
 		avgLength: util.avgwordlength(string),
 		spaces: util.spacecount(string),
 	}
-}
+};
 
 console.log(superCounter("Count me in"));
