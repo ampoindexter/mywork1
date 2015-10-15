@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <link type="text/css" rel="stylesheet" href="Lesson04.css" media="screen">
+  <script type+"text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="Lesson04.js"></script>
   <meta charset="utf-8">
   <title>HTML5 and CSS3 Fundamentals</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
 </head>
 <body>
 
@@ -344,20 +346,8 @@ http://157.123.23.44/index.htm</p>
       <li><a href="http://support.xbox.com">Contact Us</a></li>
     </ul>
   </nav>
-
-
-$(document).ready(function() {
- $("footer").on("click", ".light", function(event) {
-   event.stopPropagation();
-   $("body").removeClass("dark");
-   $( "body" ).addClass("light");
-$("footer").on("click", ".dark", function(event){
-  event.stopPropagation();
-  $("body").removeClass("light");
-  $("body").addClass("dark");
-});
- });
-});
+  <button id="light">Light Theme</button>
+  <button id="dark">Dark Theme</button>
 </footer>
 </body>
 </html>
