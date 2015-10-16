@@ -1,8 +1,8 @@
 var util = {};
 
 util.oddcount = function(array) {
-	count = 0;
-	for (i = 0; i < array.length; i++) {
+	var count = 0;
+	for (var i = 0; i < array.length; i++) {
 		if (array[i] % 2 !== 0) {
 			count++;
 		}
@@ -11,8 +11,8 @@ util.oddcount = function(array) {
 };
 
 util.negcount = function(array) {
-	count = 0;
-	for (i = 0; i < array.length; i++) {
+	var count = 0;
+	for (var i = 0; i < array.length; i++) {
 		if (array[i] < 0) {
 			count++;
 		}
@@ -21,7 +21,7 @@ util.negcount = function(array) {
 };
 
 util.sum = function(array) {
-	total = 0;
+	var total = 0;
 	array.forEach(function(num) {
 		total = total + num;
 	});
@@ -35,12 +35,11 @@ util.average = function(array) {
 util.median = function(array) {
 	array.sort();
 	if (array.length % 2 !== 0) {
-		i = (array.length + 1) / 2;
+		var i = (array.length + 1) / 2;
 		return array[i];
 	} else {
-		i = array.length / 2;
-		e = (array.length / 2) + 1;
-		return (array[i] + array[e]) / 2;
+		var a = array.length / 2;
+		return (array[a] + array[a + 1]) / 2;
 	}
 };
 
