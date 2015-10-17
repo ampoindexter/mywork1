@@ -20,8 +20,8 @@ function invertColor(hexTripletColor) {
 
 $(document).ready(function() {
 	$('div').each(function() {
-		var color = getRandomColor();
-		$(this).css('background-color', color);
-		$(this).css('color', invertColor(color));
+		var backColor = getRandomColor();
+		$(this).css({'background-color': backColor,
+					 'color': invertColor(backColor)});
 	});
 });
