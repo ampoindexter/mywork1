@@ -11,17 +11,18 @@ function wordSelector(string) {
 		var max = Math.max.apply(null, numCount);
 		return max;
 	}
- 	for (var a = 0; a < words.length; a++) {
- 		wordCount[words[a]] = maxCharCount(words[a]);
+ 	for (var i = 0; i < words.length; i++) {
+ 		var word = words[i];
+ 		wordCount[word] = maxCharCount(word);
  	}
  	var total = 0;
  	var result = [];
  	for (var e in wordCount) {
  		total = Math.max(total, wordCount[e]);
  	}
- 	for (var o in wordCount) {
- 		if (wordCount[o] === total) {
- 			result.push(o);
+ 	for (var a in wordCount) {
+ 		if (wordCount[a] === total) {
+ 			result.push(a);
  		}
  	}
  	return result;
